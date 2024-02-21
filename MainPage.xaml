@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.MainPage">
+
+    <StackLayout BackgroundColor="White">
+        <StackLayout BackgroundColor="Blue">
+            <Label Text="Погода Від Василя  Ростиславовича " HorizontalOptions="Center" Margin="0,50,0,15" TextColor="#091c33" FontAttributes="Bold" />
+            <Image Margin="0,0,0,45" Source="https://www.flaticon.com/ru/free-icon/sun_2698213" BackgroundColor="Transparent" Aspect="AspectFit"/>
+        </StackLayout>
+        <RelativeLayout>
+
+            <Frame RelativeLayout.YConstraint="-87" RelativeLayout.XConstraint="-24" BackgroundColor="White" Margin="85" Padding="15">
+                <StackLayout>
+                    <Entry x:Name="userInput" WidthRequest="250" Placeholder="Введіть назву вашого міста "/>
+                    <Button x:Name="getWeather" Clicked="getWeather1_Clicked" Text="Глянути погоду " FontSize="Body" BackgroundColor="Yellow" />
+                </StackLayout>
+            </Frame>
+              
+
+
+
+                
+            
+            
+            
+        </RelativeLayout>
+        <Label x:Name="resultLabel"  Text="" FontSize="25" HorizontalOptions="Center" TextColor="#333" Margin="50"/>
+
+
+
+
+    </StackLayout>
+</ContentPage>
